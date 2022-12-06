@@ -2,9 +2,9 @@
     /* Sit on top of the page content */
     position: absolute;
     /* Full width (cover the whole page) */
-    width: 100%;
+    width: auto;
     /* Full height (cover the whole page) */
-    height: 100%;
+    height: auto;
     /* Stay at the top */
     top: 0;
     /* Stay at the left */
@@ -26,19 +26,33 @@
 
 .overlay::after {
     /* Add content : "X" */
+    content: "X";
     /* White text color */
+    color: white;
     /* Black background color */
+    background-color: black;
     /* Font family "sans-serif" */
+    font-family: sans-serif;
     /* Centered text */
+    text-align: center;
     /* Line height ( idem height ) */
+    line-height: 2rem;
     /* Display as a block */
+    display: block;
     /* Position absolute */
+    position: absolute;
     /* 1rem from the top */
+    top: 1rem;
     /* 1rem from the right */
+    right: 1rem;
     /* 2rem width */
+    width: 2rem;
     /* 2rem height */
+    height: 2rem;
     /* White border of 2px */
+    border: solid white 2px;
     /* Rounded border */
+    border-radius: 50%;
 }
 
 .overlay>figure {
