@@ -1,0 +1,48 @@
+.overlay {
+    /* Sit on top of the page content */
+    position: absolute;
+    /* Full width (cover the whole page) */
+    width: 100%;
+    /* Full height (cover the whole page) */
+    height: 100%;
+    /* Stay at the top */
+    top: 0;
+    /* Stay at the left */
+    left: 0;
+    /* Stay at the right */
+    right: 0;
+    /* Stay at the bottom */
+    bottom: 0;
+    /* Black background with opacity */
+    background-color: black;
+    opacity: 0.9;
+    /* Add a pointer on hover */
+    
+    /* Use a grid for easy centering */
+    display: grid;
+    /* Center vertically and horizontally */
+    place-content: center;
+}
+.overlay::after {
+    /* Add content : "X" */
+    /* White text color */
+    /* Black background color */
+    /* Font family "sans-serif" */
+    /* Centered text */
+    /* Line height ( idem height ) */
+    /* Display as a block */
+    /* Position absolute */
+    /* 1rem from the top */
+    /* 1rem from the right */
+    /* 2rem width */
+    /* 2rem height */
+    /* White border of 2px */
+    /* Rounded border */
+}
+.overlay>figure {
+    /* Max width of the figure : 100% */
+    /* Max height of the figure : 100% */
+    /* No margin */
+    /* 1rem padding */
+    /* White border of 2px */
+}
