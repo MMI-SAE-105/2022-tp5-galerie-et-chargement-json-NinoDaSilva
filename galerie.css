@@ -23,6 +23,7 @@
     /* Center vertically and horizontally */
     place-content: center;
 }
+
 .overlay::after {
     /* Add content : "X" */
     /* White text color */
@@ -39,6 +40,7 @@
     /* White border of 2px */
     /* Rounded border */
 }
+
 .overlay>figure {
     /* Max width of the figure : 100% */
     max-width: 100%;
@@ -49,6 +51,5 @@
     /* 1rem padding */
     padding: 1rem;
     /* White border of 2px */
-    border-color: white;
-    border: 2px;
+    border: solid white 2px;
 }
