@@ -28,10 +28,10 @@
             }
     ],
     }">
-        <template x-for="données">
+        <template x-for="données in données">
             <li>
-                <span x-text="obj.nom">nom</span> :
-                <a :href=".url">projet</a>
+                <span x-text="données.nom">nom</span> :
+                <a :href="données.url" >projet</a>
             </li>
         </template>
     </ul>
