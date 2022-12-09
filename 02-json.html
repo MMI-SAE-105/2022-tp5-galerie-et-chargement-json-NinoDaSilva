@@ -31,7 +31,22 @@
         <template x-for="données in données">
             <li>
                 <span x-text="données.nom">nom</span> :
-                <a :href="données.url" >projet</a>
+                <a :href="données.url" x-text="données.projet">projet</a>
+            </li>
+        </template>
+    </ul>
+
+    <!--Chargement avec une fonction asynchrone-->
+    <ul x-data="{
+        async données() {
+            const reponse = await fetch('JSON.json');
+            return await reponse.json();
+        },
+    }">
+        <template x-for="objet in données">
+            <li>
+                <span x-text="objet.nom">nom</span> :
+                <a :href="objet.url" x-text="objet.projet">projet</a>
             </li>
         </template>
     </ul>
